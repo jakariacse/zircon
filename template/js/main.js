@@ -2,6 +2,11 @@
 	"use strict";
 
 	jQuery(document).ready(function ($) {
+
+		jQuery('#mobile-menu').meanmenu({
+			meanScreenWidth: "767",
+			meanMenuContainer: '.mobile-menu-active'
+		});
     
 		$('.homepage-slides').owlCarousel({
 	    loop:true,
@@ -12,8 +17,8 @@
 	        0:{
 	            items:1
 	        },
-	        600:{
-	            items:3
+	        767:{
+	            items:1
 	        },
 	        1000:{
 	            items:1

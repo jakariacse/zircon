@@ -163,6 +163,12 @@ h6 {
 /*------------- 4. Global ----------------*/
 /*========================================*/
 
+.bg-white {
+  background-color: #fff;
+}
+.bg-gray {
+  background-color: #f7f7f7;
+}
 .table {
     display: table;
     width: 100%;
@@ -173,6 +179,81 @@ h6 {
     width: 100%;
     height: auto;
     vertical-align: middle;
+}
+.slide-bg-1 {
+  background-image: url(../img/bg/bg1.jpg);
+}
+.slide-bg-2 {
+  background-image: url(../img/bg/bg2.jpg);
+}
+.slide-bg-3 {
+  background-image: url(../img/bg/bg3.jpg);
+}
+/*Owl Carousel Nav Prev*/
+.homepage-slides .owl-nav button.owl-prev, .homepage-slides .owl-nav button.owl-next {
+  font-size: 20px;
+  height: 50px;
+  left: 50px;
+  line-height: 50px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 50px;
+  background: #fff;
+  transform: translateY(-50%);
+  transition: all 600ms ease 0ms;
+  opacity: 0;
+  visibility: hidden;
+}
+.homepage-slides:hover .owl-nav button.owl-prev,
+.homepage-slides:hover .owl-nav button.owl-next {
+  opacity: 1;
+  visibility: visible;
+}
+.homepage-slides .owl-nav button.owl-next {
+  left: auto;
+  right: 50px;
+}
+.mean-container .mean-nav {
+  float: left;
+  width: 100%;
+  background: #0c1923;
+  margin-top: 0px;
+}
+.mean-container .mean-bar {
+  float: left;
+  width: 100%;
+  position: relative;
+  background: no-repeat;
+  padding: 0;
+  min-height: 0;
+  z-index: 999999;
+
+}
+.mean-container a.meanmenu-reveal {
+  width: 22px;
+  height: 22px;
+  padding: 13px 13px 11px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  color: #008435;
+  text-decoration: none;
+  font-size: 16px;
+  text-indent: -9999em;
+  line-height: 22px;
+  font-size: 1px;
+  display: block;
+  font-family: Arial,Helvetica,sans-serif;
+  font-weight: 700;
+  margin-top: -45px;
+}
+.mean-container a.meanmenu-reveal span {
+  display: block;
+  background: #008435;
+  height: 3px;
+  margin-top: 3px;
 }
 /*========================================*/
 /*----------- 5. Header Top --------------*/
@@ -219,32 +300,86 @@ h6 {
 /*========================================*/
 /*------- 6. Header Navigation Area ------*/
 /*========================================*/
-.header-navigation-are {
+.header-navigation-area {
 	background: #f8f8f8;
 }
-.header-navigation-are .logo {
+.header-navigation-area .logo {
 
 }
-.header-navigation-are .main-menu {
+.header-navigation-area .main-menu {
 	text-align: right;
 }
-.header-navigation-are .main-menu ul {
+.header-navigation-area .main-menu ul {
 	
 }
-.header-navigation-are .main-menu li {
-    display: inline-block;
-    margin-right: 45px;
+.header-navigation-area .main-menu ul li {
+  display: inline-block;
+  margin-left: 45px;
+  position: relative;
+  transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -webkit-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
 }
-.header-navigation-are .main-menu li:last-child {
-    margin-right: 0;
-}
-.header-navigation-are .main-menu a {
+.header-navigation-area .main-menu ul li a {
 	padding: 30px 0;
 	display: block;
 	color: #2f2b2b;
 	font-weight: 600;
 }
-
+.header-navigation-area .main-menu ul li:hover > a {
+  color: #008435;
+}
+/*Submenue*/
+.header-navigation-area .main-menu ul li ul.sub-menu {
+  position: absolute;
+  width: 260px;
+  background: #f8f8f8;
+  z-index: 2;
+  transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -webkit-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  opacity: 0;
+  visibility: hidden;
+  left: 0;
+  top: 110%
+}
+.header-navigation-area .main-menu ul li:hover ul.sub-menu {
+  opacity: 1;
+  visibility: visible;
+  top: 100%;
+}
+.header-navigation-area .main-menu ul li ul.sub-menu li {
+  display: block;
+  margin: 0;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+.header-navigation-area .main-menu ul li ul.sub-menu li:last-child {
+  border-bottom: none;
+}
+.header-navigation-area .main-menu ul li ul.sub-menu li a {
+  padding: 10px 20px;
+  font-size: 13px;
+}
+.header-navigation-area .main-menu ul li ul.sub-menu li:hover > a {
+  padding-left: 25px;
+  background-color: #008435;
+  color: #fff;
+}
+.header-navigation-area .main-menu ul li ul.sub-menu li ul.sub-menu {
+  left: 100%;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+.header-navigation-area .main-menu ul li ul.sub-menu li:hover ul.sub-menu {
+  opacity: 1;
+  visibility: visible;
+}
 /*========================================*/
 /*----------- 6. Home Slider -------------*/
 /*========================================*/
@@ -263,62 +398,4 @@ h6 {
   font-size: 84px;
   color: #fff;
   line-height: 90px;
-}
-.slider-wrapper a{}
-
-.slide-bg-1 {
-  background-image: url(../img/bg/bg1.jpg);
-}
-.slide-bg-2 {
-  background-image: url(../img/bg/bg2.jpg);
-}
-.slide-bg-3 {
-  background-image: url(../img/bg/bg3.jpg);
-}
-
-/* Owl Carousel Styles */
-.owl-theme .owl-dots .owl-dot span {
-  background: #fff none repeat scroll 0 0;
-  border: 2px solid #eeeeee;
-  border-radius: 50%;
-  display: block;
-  height: 12px;
-  margin: 5px 3px;
-  opacity: 0.8;
-  transition: all 0.4s ease 0s;
-  width: 12px;
-}
-.owl-theme .owl-dots .owl-dot {
-  display: inline-block;
-}
-.owl-theme .owl-dots {
-  bottom: 10px;
-  left: 0;
-  position: absolute;
-  right: 0;
-  text-align: center;
-}
-.homepage-slides .owl-nav button.owl-prev, .homepage-slides .owl-nav button.owl-next {
-  font-size: 20px;
-  height: 50px;
-  left: 50px;
-  line-height: 50px;
-  position: absolute;
-  text-align: center;
-  top: 50%;
-  width: 50px;
-  background: #fff;
-  transform: translateY(-50%);
-  transition: all 600ms ease 0ms;
-  opacity: 0;
-  visibility: hidden;
-}
-.homepage-slides:hover .owl-nav button.owl-prev,
-.homepage-slides:hover .owl-nav button.owl-next {
-  opacity: 1;
-  visibility: visible;
-}
-.homepage-slides .owl-nav button.owl-next {
-  left: auto;
-  right: 50px;
 }
