@@ -11,12 +11,13 @@
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/meanmenu.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/utility.css">
 	<link rel="stylesheet" href="css/responsive.css">
 </head>
 
 <body>
 
-	<!-- header start -->
+	<!-- header Start -->
 	<header>
 		<div class="header-top">
 			<div class="container">
@@ -48,7 +49,8 @@
 					<div class="col-xl-2 col-lg-2 col-md-2 align-self-center">
 						<div class="logo">
               <a href="index.html">
-                <img src="img/logo.png" alt="">
+                <!-- <img src="img/logo.png" alt=""> -->
+                <h2>Zirkon</h2>
               </a>
             </div>
           </div>
@@ -57,11 +59,11 @@
 						<div class="main-menu">
 							<nav id="mobile-menu">
 								<ul>
-									<li><a href="#">Home</a>										
+									<li class="has-sub"><a href="#">Home</a>
 										<ul class="sub-menu">
 											<li><a href="#">Layout 1</a></li>
 											<li><a href="#">Layout 2</a></li>
-											<li><a href="#">Layout 3</a>
+											<li class="has-sub-child"><a href="#">Layout 3</a>
 												<ul class="sub-menu">
 													<li><a href="#">Gallery</a></li>
 													<li><a href="#">Service</a></li>
@@ -72,20 +74,20 @@
 										</ul>
 									</li>
 									<li><a href="#">About</a></li>
-									<li><a href="#">Page</a>
+									<li class="has-sub"><a href="#">Page</a>
 										<ul class="sub-menu">
 											<li><a href="#">Gallery</a></li>
 											<li><a href="#">Service</a></li>
 											<li><a href="#">404</a></li>
 										</ul>
 									</li>
-									<li><a href="#">Services</a>
+									<li class="has-sub"><a href="#">Services</a>
 										<ul class="sub-menu">
 											<li><a href="#">Services</a></li>
 											<li><a href="#">Single Service</a></li>
 										</ul>
 									</li>
-									<li><a href="#">Blog</a>
+									<li class="has-sub"><a href="#">Blog</a>
 										<ul class="sub-menu">
 											<li><a href="#">Blog</a></li>
 											<li><a href="#">Single Blog</a></li>
@@ -100,9 +102,9 @@
 			</div>
 		</div>
 	</header>
-	<!-- header start -->
+	<!-- header End -->
 
-	<!-- Home Section -->
+	<!-- Home Section Start -->
 	<section>
 		<div class="slider-area">
 			<div class="homepage-slides owl-carousel">
@@ -136,6 +138,147 @@
 			</div>
 		</div>
 	</section>
+	<!-- Home Section End -->
+
+	<!-- About Section Start -->
+	<section class="about pdt-90 pdb-90">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-6">
+					<h5 class="sub-title">About Zirkon</h5>
+					<h3 class="title">Who We Are?</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus quae quos, similique earum atque consequatur dicta, itaque voluptatum eligendi cum veniam consequuntur eum blanditiis nemo ullam necessitatibus laboriosam ab commodi veritatis dignissimos eius magnam nostrum.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus quae quos, similique earum atque consequatur dicta, itaque voluptatum eligendi cum veniam consequuntur eum blanditiis nemo ullam necessitatibus laboriosam ab commodi veritatis dignissimos eius magnam nostrum.</p>
+					<a href="#" class="theme-btn mrt-10">Read more</a>
+				</div>
+				<div class="col-xl-6">
+					<img src="img/about/about1.jpg" alt="">
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- About Section End -->
+
+	<!-- Features Section Start -->
+	<section class="features bg-gray pdt-90 pdb-90">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-6 offset-xl-3">
+					<div class="section-title text-center">
+						<h5 class="sub-title">About Zirkon</h5>
+						<h3 class="title">Who We Are?</h3>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xl-4">
+					<div class="feature-item">
+						<div class="feature-thumb">
+							<img src="img/features/feature1.jpg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4">
+					<div class="feature-item">
+						<div class="feature-thumb">
+							<img src="img/features/feature2.jpg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4">
+					<div class="feature-item">
+						<div class="feature-thumb">
+							<img src="img/features/feature3.jpg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Features Section End -->
+
+	<!-- Services Section Start -->
+	<section class="services pdt-90 pdb-90">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-6 offset-xl-3">
+					<div class="section-title text-center">
+						<h5 class="sub-title">About Zirkon</h5>
+						<h3 class="title">Who We Are?</h3>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xl-4">
+					<div class="service-item d-flex mrb-30">
+						<div class="service-icon">
+							<i class="fa fa-heart"></i>
+						</div>
+						<div class="service-description">
+							<h4 class="title">Business Consulting</h4>
+							<p class="description">Lorem ipsum dolor sit ametconse tetur adipisicing elit Nemo placeat quiaparet similique earum atque consequa.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4">
+					<div class="service-item d-flex mrb-30">
+						<div class="service-icon">
+							<i class="fa fa-heart"></i>
+						</div>
+						<div class="service-description">
+							<h4 class="title">Business Consulting</h4>
+							<p class="description">Lorem ipsum dolor sit ametconse tetur adipisicing elit Nemo placeat quiaparet similique earum atque consequa.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4">
+					<div class="service-item d-flex mrb-30">
+						<div class="service-icon">
+							<i class="fa fa-heart"></i>
+						</div>
+						<div class="service-description">
+							<h4 class="title">Business Consulting</h4>
+							<p class="description">Lorem ipsum dolor sit ametconse tetur adipisicing elit Nemo placeat quiaparet similique earum atque consequa.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4">
+					<div class="service-item d-flex mrb-30">
+						<div class="service-icon">
+							<i class="fa fa-heart"></i>
+						</div>
+						<div class="service-description">
+							<h4 class="title">Business Consulting</h4>
+							<p class="description">Lorem ipsum dolor sit ametconse tetur adipisicing elit Nemo placeat quiaparet similique earum atque consequa.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4">
+					<div class="service-item d-flex mrb-30">
+						<div class="service-icon">
+							<i class="fa fa-heart"></i>
+						</div>
+						<div class="service-description">
+							<h4 class="title">Business Consulting</h4>
+							<p class="description">Lorem ipsum dolor sit ametconse tetur adipisicing elit Nemo placeat quiaparet similique earum atque consequa.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xl-4">
+					<div class="service-item d-flex mrb-30">
+						<div class="service-icon">
+							<i class="fa fa-heart"></i>
+						</div>
+						<div class="service-description">
+							<h4 class="title">Business Consulting</h4>
+							<p class="description">Lorem ipsum dolor sit ametconse tetur adipisicing elit Nemo placeat quiaparet similique earum atque consequa.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Services Section End -->
 
 	<!-- Integrated important scripts here -->
 	<script src="js/jquery-3.2.1.min.js"></script>

@@ -1,0 +1,39 @@
+/*utility css*/
+.theme-color {
+  background-color: #FFB200;
+  color: #FFB200;
+}
+.secondary-theme-color {
+  background-color: #243559;
+}
+.bg-white {
+  background-color: #fff;
+}
+.bg-gray {
+  background-color: #f7f7f7;
+}
+.theme-btn {
+	background: #243559;
+	padding: 15px 30px;
+	color: #fff;
+	transition: all 300ms ease 0s;
+	display: inline-block;
+}
+.theme-btn:hover {
+	background: #FFB200;
+	color: #fff;
+}
+/*margin top*/
+.mrt-10 {
+	margin-top: 10px;
+}
+.mrb-30 {
+	margin-bottom: 30px;
+}
+/*padding top*/
+.pdt-90 {
+	padding-top: 90px;
+}
+.pdb-90 {
+	padding-bottom: 90px;
+}
