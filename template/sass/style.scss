@@ -1,0 +1,40 @@
+/*********************************************************
+ * Template Name: Zircon - Business Consulting HTML5 Template
+ * Template URI: http://thememuseum.com
+ * Description: This is Business Consulting HTML5 Template
+ * Author: Zakaria Hossain
+ * Author URI: http://thememuseum.com
+ * Version: 1.0
+/**********************************************************
+
+/***************** TABLE OF CONTENTS **********************
+1. Google Fonts
+2. Reset Styles
+3. Typography
+4. Global
+5. Header Top
+6. Header Navigation Area
+7. Home Slider
+8. About Section
+8. Services Section
+*/
+
+/*========================================*/
+/*----------- 1. Google Fonts ------------*/
+/*========================================*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800|Poppins:300,400,500,600,700,800,900');
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+
+@import "_variables";
+@import "_colors";
+@import "_reset";
+@import "_typography";
+@import "_global";
+@import "_header";
+@import "_home-slider";
+@import "_section-title";
+@import "sections/_about";
+@import "sections/_service";

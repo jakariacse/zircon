@@ -1,0 +1,19 @@
+/*========================================*/
+/*----------- 2. Reset Styles ------------*/
+/*========================================*/
+* {
+	margin:0px;
+	padding:0px;
+	border:none;
+	outline:none !important;
+}
+::-moz-selection{
+    background:#2d2d2d;
+    color:#fff;
+    text-shadow:none
+}
+::selection{
+    background:#2d2d2d;
+    color:#fff;
+    text-shadow:none
+}

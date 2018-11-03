@@ -1,0 +1,89 @@
+/*========================================*/
+/*------------- 4. Global ----------------*/
+/*========================================*/
+.table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+.table-cell {
+    display: table-cell;
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+.slide-bg-1 {
+  background-image: url(../img/bg/slider1.jpg);
+}
+.slide-bg-2 {
+  background-image: url(../img/bg/slider2.jpg);
+}
+.slide-bg-3 {
+  background-image: url(../img/bg/slider3.jpg);
+}
+/*Owl Carousel Nav Prev*/
+.homepage-slides .owl-nav button.owl-prev, .homepage-slides .owl-nav button.owl-next {
+  font-size: 20px;
+  height: 50px;
+  left: 50px;
+  line-height: 50px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 50px;
+  background: #fff;
+  transform: translateY(-50%);
+  transition: all 600ms ease 0ms;
+  opacity: 0;
+  visibility: hidden;
+}
+.homepage-slides:hover .owl-nav button.owl-prev,
+.homepage-slides:hover .owl-nav button.owl-next {
+  opacity: 1;
+  visibility: visible;
+}
+.homepage-slides .owl-nav button.owl-next {
+  left: auto;
+  right: 50px;
+}
+.mean-container .mean-nav {
+  float: left;
+  width: 100%;
+  background: #0c1923;
+  margin-top: 0px;
+}
+.mean-container .mean-bar {
+  float: left;
+  width: 100%;
+  position: relative;
+  background: no-repeat;
+  padding: 0;
+  min-height: 0;
+  z-index: 999999;
+
+}
+.mean-container a.meanmenu-reveal {
+  width: 22px;
+  height: 22px;
+  padding: 13px 13px 11px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  color: #243559;
+  text-decoration: none;
+  font-size: 16px;
+  text-indent: -9999em;
+  line-height: 22px;
+  font-size: 1px;
+  display: block;
+  font-family: Arial,Helvetica,sans-serif;
+  font-weight: 700;
+  margin-top: -45px;
+}
+.mean-container a.meanmenu-reveal span {
+  display: block;
+  background: #243559;
+  height: 3px;
+  margin-top: 3px;
+}
