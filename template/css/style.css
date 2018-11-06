@@ -2,7 +2,7 @@
  * Template Name: Zircon - Business Consulting HTML5 Template
  * Template URI: http://thememuseum.com
  * Description: This is Business Consulting HTML5 Template
- * Author: Zakaria Hossain
+ * Author: Md Zakaria Hossain
  * Author URI: http://thememuseum.com
  * Version: 1.0
 /**********************************************************
@@ -26,6 +26,9 @@
 font-family: 'Open Sans', sans-serif;
 font-family: 'Poppins', sans-serif;
 */
+.bg-white {
+  background: #ffffff; }
+
 .bg-silver-light {
   background: #f5f3f1; }
 
@@ -81,8 +84,7 @@ input[type="tel"],
 button,
 button[type="submit"] {
   -moz-appearance: none;
-  -webkit-box-shadow: none !important;
-          box-shadow: none !important; }
+  box-shadow: none !important; }
 
 img:not([draggable]),
 embed,
@@ -92,7 +94,6 @@ video {
   height: auto; }
 
 a {
-  -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   text-decoration: none;
   cursor: pointer;
@@ -194,9 +195,7 @@ h6 {
   top: 50%;
   width: 50px;
   background: #fff;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  -webkit-transition: all 600ms ease 0ms;
+  transform: translateY(-50%);
   transition: all 600ms ease 0ms;
   opacity: 0;
   visibility: hidden; }
@@ -377,8 +376,7 @@ h6 {
   position: absolute;
   right: 10px;
   top: 50%;
-  -webkit-transform: translateY(-14px);
-          transform: translateY(-14px);
+  transform: translateY(-14px);
   font-family: FontAwesome;
   font-size: 16px; }
 
@@ -387,8 +385,7 @@ h6 {
   position: absolute;
   right: -16px;
   top: 50%;
-  -webkit-transform: translateY(-13px);
-          transform: translateY(-13px);
+  transform: translateY(-13px);
   font-family: FontAwesome;
   font-size: 16px; }
 
@@ -448,5 +445,3 @@ h6 {
 
 .service-description .title {
   margin-bottom: 10px; }
-
-/*# sourceMappingURL=style.css.map */
