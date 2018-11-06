@@ -77,9 +77,8 @@ p {
   font-family: "Open Sans", sans-serif; 
 }
 h1, h2, h3, h4, h5, h6 {
-  color: #282828;
+  color: #261E42;
   margin: 0 0 15px;
-  font-weight: 600; 
 }
 h1 {
   font-size: 72px;
@@ -87,25 +86,23 @@ h1 {
 }
 h2 {
   font-size: 48px;
-  line-height: 55px; 
+  line-height: 55px;
 }
 h3 {
   font-size: 30px;
-  line-height: 28px; 
-}
-h3 {
-  font-size: 30px;
-  line-height: 28px; 
+  line-height: 28px;
+  letter-spacing: 0.5px;
+  font-weight: 700;
 }
 h4 {
   font-size: 22px;
-  line-height: 28px; 
+  line-height: 28px;
 }
 h5 {
   font-size: 20px;
-  line-height: 28px; 
+  line-height: 28px;
 }
 h6 {
   font-size: 18px;
-  line-height: 26px; 
+  line-height: 26px;
 }
